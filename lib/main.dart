@@ -1,12 +1,10 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:html_character_entities/html_character_entities.dart';
 import 'package:flutter_riverpod_quiz_app/models/failure_model.dart';
 import 'package:flutter_riverpod_quiz_app/repositories/quiz_repository.dart';
-
 import 'controllers/quiz/quiz_controller.dart';
 import 'controllers/quiz/quiz_state.dart';
 import 'enums/difficulty.dart';
@@ -23,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ProviderScope(
       child: MaterialApp(
-        title: 'Flutter Riverpod Quiz',
+        title: 'Flutter Riverpod Quiz App',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
             primarySwatch: Colors.yellow,
